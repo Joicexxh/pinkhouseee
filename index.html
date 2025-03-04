@@ -1,16 +1,91 @@
+Claro! Vou embutir o CSS diretamente no código HTML que você forneceu, dentro de uma tag <style> na seção <head>. Aqui está o código completo:
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink House</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FF69B4; /* Cor rosa */
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 150px; /* Ajuste o tamanho da sua logomarca */
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #portfolio .portfolio-links a {
+            display: block;
+            margin: 10px 0;
+            color: #FF69B4;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #portfolio .portfolio-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="https://www.google.com/imgres?imgurl=http%3A%2F%2Fcinema10.com.br%2Fupload%2Fnoticias%2F2019-2%2F690362b037.jpg&tbnid=a3AuGWypLcEFAM&vet=1&imgrefurl=https%3A%2F%2Fcinema10.com.br%2Fnoticias%2Fa-pantera-cor-de-rosa-tera-live-action&docid=2opwNYDMVQ1-fM&w=800&h=450&itg=1&source=sh%2Fx%2Fim%2Fm5%2F0&kgs=3ba44dc8845ee517" alt="Pink House Logo">
-        </div><
+        </div>
         <nav>
             <ul>
                 <li><a href="#portfolio">Portfólio</a></li>
@@ -37,7 +112,7 @@
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato comigo através do <a href="email;pinkhoussr@gmail.com" >pinkhoussr@gmail.com</a>.</p>
+        <p>Entre em contato comigo através do <a href="mailto:pinkhoussr@gmail.com">pinkhoussr@gmail.com</a>.</p>
     </section>
 
     <footer>
@@ -45,4 +120,3 @@
     </footer>
 </body>
 </html>
-
